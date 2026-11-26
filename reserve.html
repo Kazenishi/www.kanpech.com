@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self' 'sha256-Du+OJKJSbdUgz5nrHeWWINvez6XKDDU/tyj/5c2uvwo='; font-src 'self'; base-uri 'none'; form-action 'self'; object-src 'none'">
+<title>Book a table · Kanpèch</title>
+<meta name="description" content="Book a table at Kanpèch: pick a day, a time and how many you are. On this concept site, nothing is sent.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1c0f16">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book a table · Kanpèch">
+<meta property="og:description" content="Book a table at Kanpèch: pick a day, a time and how many you are. On this concept site, nothing is sent.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/bodoni-moda-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+
+<script>document.documentElement.classList.add('js')</script>
+<script src="js/hours.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/forms.js" defer></script>
+<script src="js/reserve.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<p class="concept">Kanpèch is a concept site, not a real restaurant. Design and code by F.&nbsp;Abdul Casias.</p>
+<header class="site-header" data-header>
+  <div class="site-header__inner">
+    <a class="logo" href="index.html">Kanpèch</a>
+    <nav class="nav" aria-label="Main"><ul><li><a href="menu.html">Menu</a></li><li><a href="story.html">Story</a></li><li><a href="events.html">Private events</a></li><li><a href="contact.html">Visit</a></li></ul></nav>
+    <a class="btn btn--small header-cta" href="reserve.html" aria-current="page">Book a table</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Open navigation" data-nav-toggle><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></button>
+  </div>
+</header>
+<div class="sheet" id="sheet" data-sheet hidden>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="story.html">Story</a></li><li><a href="events.html">Private events</a></li><li><a href="contact.html">Visit</a></li><li><a href="reserve.html" aria-current="page">Book a table</a></li></ul></nav>
+</div>
+<main id="main" class="split">
+  <div class="split__panel" aria-hidden="true"><div class="panel" data-panel-stack>
+<div class="panel__item is-on" data-panel="table-dim"><picture><source media="(min-width: 900px)" type="image/webp" srcset="img/table-dim-480.webp 480w, img/table-dim-800.webp 800w, img/table-dim-1200.webp 1200w, img/table-dim-1600.webp 1600w" sizes="50vw"><source media="(min-width: 900px)" srcset="img/table-dim-800.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A candlelit table with a plate and a glass of white wine" width="800" height="1200" loading="eager" fetchpriority="high" decoding="async"></picture></div>
+<div class="panel__item" data-panel="plating-dark"><picture><source media="(min-width: 900px)" type="image/webp" srcset="img/plating-dark-480.webp 480w, img/plating-dark-800.webp 800w, img/plating-dark-1200.webp 1200w, img/plating-dark-1600.webp 1600w" sizes="50vw"><source media="(min-width: 900px)" srcset="img/plating-dark-800.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A chef plating dishes in a dim kitchen" width="800" height="533" loading="lazy" decoding="async"></picture></div>
+  </div></div>
+  <div class="split__content">
+<section class="block" data-panel-key="table-dim" aria-labelledby="reserve-title">
+  <figure class="inline-fig"><picture><source media="(max-width: 899.98px)" type="image/webp" srcset="img/table-dim-480.webp 480w, img/table-dim-800.webp 800w, img/table-dim-1200.webp 1200w, img/table-dim-1600.webp 1600w" sizes="(min-width: 600px) 90vw, 100vw"><source media="(max-width: 899.98px)" srcset="img/table-dim-800.jpg"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="A candlelit table with a plate and a glass of white wine" width="800" height="1200" loading="eager" fetchpriority="high" decoding="async"></picture></figure>
+  <h1 id="reserve-title">Book a table</h1>
+  <p class="lede">For up to 8 guests. For more, see <a href="events.html">private events</a>.</p>
+  <form class="form" data-form="reserve" novalidate>
+    <noscript><p class="note">Booking needs JavaScript. On this concept site the form only shows a summary, and sends nothing.</p></noscript>
+    <fieldset class="field">
+      <legend>How many are you?</legend>
+      <div class="stepper" data-stepper>
+        <button type="button" class="stepper__btn" data-step="-1" aria-label="One guest fewer">−</button>
+        <input id="rs-guests" name="guests" type="number" inputmode="numeric" min="1" max="8" value="2" aria-label="Guests" required>
+        <button type="button" class="stepper__btn" data-step="1" aria-label="One guest more">+</button>
+      </div>
+    </fieldset>
+    <div class="field"><label for="rs-date">Day</label><input id="rs-date" name="date" type="date" required aria-describedby="rs-date-hint"><p class="hint" id="rs-date-hint">Closed on Mondays. Bookings open 60 days ahead.</p></div>
+    <fieldset class="field" data-slots-field>
+      <legend>Time</legend>
+      <div class="slots" data-slots><p class="hint">Pick a day first, and the free times will show here.</p></div>
+    </fieldset>
+    <div class="field"><label class="check"><input type="checkbox" name="tasting" data-tasting> The seven courses (Friday and Saturday, for the whole table)</label></div>
+    <div class="field"><label for="rs-occasion">Occasion</label><select id="rs-occasion" name="occasion"><option value="">None</option><option>Birthday</option><option>Anniversary</option><option>Business dinner</option><option>Other</option></select></div>
+    <div class="field"><label for="rs-name">Name</label><input id="rs-name" name="name" autocomplete="name" required></div>
+    <div class="field-row">
+      <div class="field"><label for="rs-phone">Phone</label><input id="rs-phone" name="phone" type="tel" autocomplete="tel" required></div>
+      <div class="field"><label for="rs-email">Email <span class="optional">(optional)</span></label><input id="rs-email" name="email" type="email" autocomplete="email"></div>
+    </div>
+    <div class="field"><label for="rs-notes">Allergies or requests</label><textarea id="rs-notes" name="notes" rows="3"></textarea></div>
+    <button class="btn" type="submit">Request the table</button>
+    <p class="hint">Tables are held for 15 minutes.</p>
+  </form>
+</section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__grid">
+    <div>
+      <p class="logo logo--footer">Kanpèch</p>
+      <p class="muted">A Haitian kitchen in Pétion-Ville, cooking over wood fire.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Hours</h2>
+      <dl class="hours"><div><dt>Monday</dt><dd>Closed</dd></div><div><dt>Tuesday</dt><dd>6 pm to 11 pm</dd></div><div><dt>Wednesday</dt><dd>6 pm to 11 pm</dd></div><div><dt>Thursday</dt><dd>6 pm to 11 pm</dd></div><div><dt>Friday</dt><dd>6 pm to midnight</dd></div><div><dt>Saturday</dt><dd>6 pm to midnight</dd></div><div><dt>Sunday</dt><dd>Noon to 4 pm</dd></div></dl>
+      <p class="open-status" data-open-status></p>
+    </div>
+    <div>
+      <h2 class="footer-title">Contact</h2>
+      <p>Pétion-Ville, Haiti<br><a href="tel:+50900000000">+509 0000-0000</a><br><a href="mailto:hello@kanpech.example">hello@kanpech.example</a></p>
+    </div>
+    <nav aria-label="Footer">
+      <h2 class="footer-title">Pages</h2>
+      <ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="story.html">Story</a></li><li><a href="events.html">Private events</a></li><li><a href="contact.html">Visit</a></li><li><a href="reserve.html">Book a table</a></li></ul>
+    </nav>
+  </div>
+  <div class="site-footer__base">
+    <p>Kanpèch is a concept project by F.&nbsp;Abdul Casias. The restaurant, its menu and its prices are made up, and no form on this site sends anything.</p>
+    <details class="credits"><summary>Photo credits</summary><ul><li><a href="https://www.pexels.com/photo/27556978/" rel="noopener">Braised duck with carrots in a dark sauce</a>, by Snappr, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/6872134/" rel="noopener">Fish grilling over glowing charcoal</a>, by Quang Nguyen Vinh, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/36505864/" rel="noopener">A chef in a black jacket spooning sauce onto small plates</a>, by Critical Smith, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/27580842/" rel="noopener">A layered cocktail on a bar counter</a>, by Teysa Tugadi, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/941861/" rel="noopener">A dining room in red light, with candles on the tables</a>, by Chan Walrus, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/6554673/" rel="noopener">Friends sharing dinner by candlelight</a>, by cottonbro studio, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://commons.wikimedia.org/wiki/File:Haematoxylum_campechianum_wood_chips.jpg" rel="noopener">A hand holding chips of orange logwood heartwood</a>, by Waughd, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC BY-SA 4.0</a></li><li><a href="https://www.inaturalist.org/photos/115898893" rel="noopener">A logwood tree in yellow bloom</a>, by 葉子, <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="noopener">CC0 1.0</a></li><li><a href="https://www.pexels.com/photo/6715103/" rel="noopener">A long table set with candles in a dark room</a>, by cottonbro studio, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/27556981/" rel="noopener">Braised oxtail in a dark, glossy sauce with thyme</a>, by Snappr, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/12362298/" rel="noopener">Fried plantains on a black plate</a>, by SC Studio, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/2403392/" rel="noopener">A chef plating dishes in a dim kitchen</a>, by Yente Van Eynde, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/37923425/" rel="noopener">A cook’s hand seasoning a dish</a>, by Mad Knoxx Deluxe, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/16077372/" rel="noopener">A bowl of soup with herbs and lime</a>, by A.V. Phina, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/6839658/" rel="noopener">A candlelit table with a plate and a glass of white wine</a>, by cottonbro studio, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li><li><a href="https://www.pexels.com/photo/39022486/" rel="noopener">A whole grilled fish with herbs and lime</a>, by Deane Bayas, <a href="https://www.pexels.com/license/" rel="noopener">Pexels License</a></li></ul><p>Photos from Pexels, iNaturalist and Wikimedia Commons, under the licences named above.</p></details>
+  </div>
+</footer>
+</body>
+</html>

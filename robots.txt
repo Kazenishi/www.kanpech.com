@@ -1,0 +1,3 @@
+# Kanpèch is a concept site for a made-up restaurant: please do not index it.
+User-agent: *
+Disallow: /
